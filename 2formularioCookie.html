@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Configuración</title>
+</head>
+<body>
+    <form action="2formularioCookie.php" method="post">
+        <h3>Configuración de titular del sitio:</h3>
+        <input type="radio" id="OpcionPolitica" name="UsarRadio" value="Noticias Políticas">
+        <label for="OpcionPolitica">Noticias Políticas</label><br>
+
+        <input type="radio" id="OpcionEconomica" name="UsarRadio" value="Noticias Económicas">
+        <label for="OpcionEconomica">Noticias Económicas</label><br>
+
+        <input type="radio" id="OpcionDeportiva" name="UsarRadio" value="Noticias Deportivas">
+        <label for="OpcionDeportiva">Noticias Deportivas</label><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="2borrarCookie.php" method="post">
+        <button type="submit" name="borrar">Borrar cookies</button>
+    </form>
+
+    <h1>Se configuró correctamente</h1>
+    <p>Ir a la otra página</p>
+    <p id="resultado"></p>
+</body>
+</html>
